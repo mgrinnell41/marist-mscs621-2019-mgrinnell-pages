@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.2",
   "info": {
-    "title": "Sample Application",
+    "title": "Wedding Tracking API Service",
     "version": "0.1.0"
   },
   "paths": {
@@ -126,49 +126,6 @@
         },
         "summary": "Post all data",
         "operationId": "create_data"
-      }
-    },
-    "/data/{data_id}/purchase": {
-      "put": {
-        "parameters": [
-          {
-            "in": "path",
-            "name": "data_id",
-            "schema": {
-              "type": "integer"
-            },
-            "required": true,
-            "description": "Numeric ID of the data to purchase"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {}
-              }
-            }
-          }
-        },
-        "summary": "Purchase data",
-        "operationId": "purchase_data"
-      }
-    },
-    "/functions": {
-      "post": {
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {}
-              }
-            }
-          }
-        },
-        "summary": "Post name",
-        "operationId": "post_name"
       }
     }
   }
